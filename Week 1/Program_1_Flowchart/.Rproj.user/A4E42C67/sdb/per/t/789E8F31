@@ -1,0 +1,18 @@
+{
+    "contents" : "library(DiagrammeR)\n\n#This is the flow chart for Program #1\nProgram1 <-\"\n           graph TD;\n          A[Setup pin 13] --> B[Turn On LED];\n          B --> C[Delay 1s];\n          C --> D[Turn Off LED];\n          D --> B\n           \"\nmermaid(Program1)\n\n\n# This is the flow chart for Program #2\nlibrary(DiagrammeR)\nProgram2 <-\"\ngraph TD\n A[Establish Serial Comm] --> B[Setup pin 13]\n  B --> IF1{Max Score not reached?}\n  IF1 --> |No|ELSE1_A[Print congratz msg]\n  ELSE1_A --> ELSE1_B[Turn On LED]\n  IF1 --> |Yes|IF1_A[Blink LED]\n  IF1_A --> IF2{Double points reached?}\n  IF2 --> |NO|IF2_A[Increment Double Score Counter];\n  ELSE2_A --> ELSE2_B[DOUBE CURRENT SCORE];\n  ELSE2_B --> C[Print Score];\n  IF2_A --> IF2_B[Increment Score];\n  IF2 --> |YES|ELSE2_A[Clear Double Score Counter];\n  IF2_B --> C;\n  C --> IF1;\n\n\"\nmermaid(Program2)\n",
+    "created" : 1427160308054.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "300528793",
+    "id" : "789E8F31",
+    "lastKnownWriteTime" : 1427165865,
+    "path" : "~/GitHub/Clarion-Arduino-Workshop/Week 1/Program_1_Flowchart/Program 1.R",
+    "project_path" : "Program 1.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "type" : "r_source"
+}
